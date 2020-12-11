@@ -1,12 +1,11 @@
 ---
 layout: post
-title:      "BeautifulSoup Best Pracices "
-date:       2020-12-11 04:09:41 +0000
+title:      "BeautifulSoup Best Practices "
+date:       2020-12-10 23:09:42 -0500
 permalink:  beautifulsoup_best_pracices
 ---
 
-
-
+![](https://miro.medium.com/max/1560/1*-ZQxCcXWY0nhQms2vZYDKQ.jpeg)
 ## My Story
 
 After having used BeautifulSoup multiple times to scrape information from various websites, there are some common issues that might arise due to a lack of experience or experimentation. These issues range from information not being included in a tag, errors resulting from trying to scrape information that doesn't exist, or extracting issues from JSON objects included in the HTML code. For each of these scenarios, there are fixes that may or may not be well-known, but for sure will help to alleviate any undue stress over the course of your journey experimenting with BeautifulSoup. 
@@ -45,11 +44,18 @@ If you "get text" from all the div tags in a specific HTML document, you can the
 
 For me, the most efficient way to extract this sort of information from an HTML page is to firstly import the json the library. Atleast in my case, all the JSON objects I have ran into thus far have been included in a tag with a specific class. If this is the case, your code should look something like this :
 
-source_code = requests.get(URL).text
-parsed_code = BeautifulSoup(source_code, "html.parser")
-json.loads(parsed_code.find('TAG', type='TYPE').string)
+1. source_code = requests.get(URL).text
+2. parsed_code = BeautifulSoup(source_code, "html.parser")
+3. json.loads(parsed_code.find('TAG', type='TYPE').string)
 
 In the above block of code, URL is the url in which you are trying to extract information, and TAG and TYPE are the specifications of the JSON object. In BeautifulSoup 4, you must include ".string" at the end of this block of code instead of ".text". Including ".text" will result in a NoneType Object being returned , which can be frustrating as this change is very minimal, but necessary! 
+
+Once the json object received, the specific data in the JSON object can be accessed just like accessing data from a dictionary. 
+
+
+# Conclusion
+The BeautifulSoup library in Python has helped to change the way people gather information from online. While it is an incredible tool that is relatively easy to use, there are nevertheless some issues that new coders might run in their first couple times webscraping through Python. While there are definetly more nuances to BeautifulSoup, there are certainly ways to work aroudn the three problems described above. I hope this can be of use to anyone currently running into issues with the BeautifulSoup library!
+
 
 
 
