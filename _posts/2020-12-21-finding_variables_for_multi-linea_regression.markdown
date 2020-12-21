@@ -1,12 +1,12 @@
 ---
 layout: post
 title:      "Finding Variables For Multi-Linea Regression"
-date:       2020-12-21 16:44:06 +0000
+date:       2020-12-21 11:44:07 -0500
 permalink:  finding_variables_for_multi-linea_regression
 ---
 
 
-For the second project of the data science/machine learning program, we were tasked with creating a linear regression model to predict the price of houses in Kings County using either the variables given, or engineered variable of our own. While Linear Regression is known as one of the simplest machine learning algorithms, finding the correct variables took a lot of trial and error, along with deciding to use them as continuous or categorical variables. 
+For the second project of the data science/machine learning program, we were tasked with creating a linear regression model to predict the price of houses in Kings County using either the variables given, or engineered variables of our own. While Linear Regression is known as one of the simplest machine learning algorithms, finding the correct variables took a lot of trial and error, along with deciding to use them as continuous or categorical variables. 
 
 
 ## Variables vs. Dependent Variable:
