@@ -1,6 +1,6 @@
 ---
 layout: post
-title:      "Finding Variables For Multi-Linea Regression"
+title:      "Finding Variables For Multi-Linear Regression"
 date:       2020-12-21 11:44:07 -0500
 permalink:  finding_variables_for_multi-linea_regression
 ---
