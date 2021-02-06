@@ -21,5 +21,9 @@ The closer the two graphs are, the more confident we can be that the model will 
 
 `model_2.add(Dropout(.2))`
 
+Essentially, this line of code will make it so 20 percent of the neuron outputs in a specific hidden layer will be ignored. This might help to reduce overfitting because the network won't be overreliant on only a few of its inputs since some of their outputs might be dropped at random. This forces the network to learn to use all of its inputs, therefore improving generalization. Another simpler way to reduce overfitting in your neural network could be to reduce the number of hidden layers, or the amount of neurons in each hidden layer. 
+
+Overall, it can very helpful to visualize and compare the loss/accuracy of a neural network's training and validation data. It can be very beneficial to decide whether or not to begin the process of fixing overfitting in your model by solely looking at this specific kind of graph. 
+
 
 
