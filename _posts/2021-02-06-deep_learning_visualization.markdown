@@ -19,7 +19,7 @@ When the validation data and training data are diverging from eachother in one w
 
 The closer the two graphs are, the more confident we can be that the model will not show signs of overfitting when the accuracy is calculated on the testing data. The more the two graphs diverge, the more evidence there is to suggest that the data on the training data will be way higher than that of the testing data. If a neural network is showing signs of overfitting, there are a couple ways to deal with this problem. The first is to utilize a feature of keras where you can add "Dense" neurons to your neural network with a single line of code. For instance:
 
-“`”  model_2.add(Dropout(.2))
+“`  model_2.add(Dropout(.2)) "
 
 
 
