@@ -23,6 +23,8 @@ Another tip I would give anyone starting Selenium would be to make use of the ti
 
 `time.sleep(# of seconds)`
 
+Lastly, as always for any webscraping project, I would highly recommend taking advantage of "try" and "except" statements. Information from websites can be unpredictable, and you may never know when you are trying to access information that isn't there. Instead of crashing your program, you can tell your program exactly what you want it to do when encountering a certain error (trying to access information that isn't there) under the except block. For example, inserting a "pass" statement under the except block will simply keep your code running without throwing a dreaded error message. 
+
 All in all, Selenium is a very powerful library that can automate many tasks when navigating through webpages, thereby saving much time and effort. If the following tips are followed, selenium can help any aspiring data scientist create large datasets in limited amounts of time, and ensure that the data collection process does not consume the majority of effort for a given project. 
 
 
