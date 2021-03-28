@@ -19,7 +19,11 @@ The first major tip I would give to anyone using selenium is to make sure that w
 
 `driver.execute_script("window.scrollTo(X, Y)")`
 
+Another tip I would give anyone starting Selenium would be to make use of the time library, specifically when interacting with multiple webpages. One thing I didn't understand at first when navigating to new websites was why I would get errors after clicking certain buttons that lead to new websites. I ultimately found out that the error messages were due to Selenium trying to grab specific information before a website had fully finished loading, meaning specific information would not yet be available to scrape. A good solution for this was to make your program/loop wait a couple seconds after navigating to a new webpage to ensure that everything had finished loading. Making use of the time library, I used code along the lines of:
 
+`time.sleep(# of seconds)`
+
+All in all, Selenium is a very powerful library that can automate many tasks when navigating through webpages, thereby saving much time and effort. If the following tips are followed, selenium can help any aspiring data scientist create large datasets in limited amounts of time, and ensure that the data collection process does not consume the majority of effort for a given project. 
 
 
 
