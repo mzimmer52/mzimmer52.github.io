@@ -14,10 +14,10 @@ When starting any machine learning project, it is essential to try and understan
 
 When the Keras Tuner is used, you can essentially put in as many hyperparameter options as you think necessary, and the algortithm will run through all possible combinations until it finished/the best model has been found. For example, we can take a look at the following code:
 
-`def build_model(hp):`
- ` model = Sequential()`
- ` for i in range(hp.Int("first layer", min_value = 0, max_value = 3)):`
-    `model.add(layers.Dense(hp.Choice(f"layer {i} features", [32, 64, 128, 256, 512]), activation='relu'))`
+`def build_model(hp):
+ model = Sequential()
+ for i in range(hp.Int("first layer", min_value = 0, max_value = 3)):
+ model.add(layers.Dense(hp.Choice(f"layer {i} features", [32, 64, 128, 256, 512]), activation='relu'))`
 		
 		
 	We are giving the keras option to either 0 or 3 of the above lines of code. Each line of code is going to be adding a Dense Layer to our neural network, with possible "node" values of 32, 64, 128, 256, or 512. What is unique about this method is that if there are other layers already below this line of code, the algorithm might actually decide that the model is better off without any of these layers, with a best value of 0 for i. 
