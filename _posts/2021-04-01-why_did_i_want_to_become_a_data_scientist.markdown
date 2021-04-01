@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Why Did I Want to Become a Data Scientist?"
-date:       2021-04-01 21:31:57 +0000
+date:       2021-04-01 17:31:58 -0400
 permalink:  why_did_i_want_to_become_a_data_scientist
 ---
 
@@ -15,7 +15,8 @@ When I entered my senior year of college, I was unsatisfied for the most part wi
 
 With a world that is becoming more data-driven everyday, the ways we manipulate and analyze data have become more important than ever. I knew this when thinking about what I wanted to study in my bootcamp. I have also always been very interested in the ways artificial intelligence and machine learning worked, and was curious to find out more/possibly make some models myself in the future. 
 
-The main reason I wanted to become a data scientist over
+The main thing that pushed me to become a data scientist over everything else was my desire to help contribute solutions to real world problems. I have discovered over the course of my four years at college that I yearn to be part of meaningful work that can have implications on the lives of those around the world. Taking machine learning for instance, machine learning algorithms are all around us. Whether it be determining whether an incoming email is spam, or determing if a credit card purchase was fraud or not, these algorithms are a huge part of our daily lives. They make us more efficient, and save us time and energy so we can invest it in other meaningful places. I knew that if I learned all about this field and what it means to be a data scientist, I could one day contribute to more systems like those already in place, and hopefully help to transform the world as we know it. 
+
 
 
 
