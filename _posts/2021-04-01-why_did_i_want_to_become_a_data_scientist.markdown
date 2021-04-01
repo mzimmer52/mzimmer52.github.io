@@ -17,6 +17,10 @@ With a world that is becoming more data-driven everyday, the ways we manipulate 
 
 The main thing that pushed me to become a data scientist over everything else was my desire to help contribute solutions to real world problems. I have discovered over the course of my four years at college that I yearn to be part of meaningful work that can have implications on the lives of those around the world. Taking machine learning for instance, machine learning algorithms are all around us. Whether it be determining whether an incoming email is spam, or determing if a credit card purchase was fraud or not, these algorithms are a huge part of our daily lives. They make us more efficient, and save us time and energy so we can invest it in other meaningful places. I knew that if I learned all about this field and what it means to be a data scientist, I could one day contribute to more systems like those already in place, and hopefully help to transform the world as we know it. 
 
+![](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQprN1YspfhTEdfHiP5TWdZTwlCPjPvhja-5Q&usqp=CAU)
+
+# Conclusion
+I am happy and grateful for every second I had studying though the Flatiron School. I learned an incredible amount of information in such a short amount of time, and plan to keep learning a little more everyday. I am extremely grateful for the opportunity I have been given, and hope I can bring my skillset into the work force in the near future.
 
 
 
