@@ -23,6 +23,8 @@ We are giving the keras option to either 0 or 3 of the above lines of code. Each
 ![](https://cdn.corporatefinanceinstitute.com/assets/combination.jpeg)
 
 As with any algorithm that runs an exhaustive search through every possible combination of hyperparameters, it is extremely important that you are aware of the time it may take to execute. What I would strongly advise anyone looking to utilize the Keras Tuner in their next machine learning project to do would be to run the tuner in a Google Collab notebook. Not only can you utilize Googles powerful gpu, but it can also take a lot of stress off of your local machine. Not to mention, you can models in Google Collab overnight, and even days for a time if you purchase Google Collab Pro. 
+
+As with any machine learning model, you need to be sure that your parameters are the best they can be. Utilizing the Keras Tuner can not only help you determine the ideal amount of nodes in each layer, but also tell you if there are some layers that shouldn't even be included! I hope this helped highlight some of the major advantages of using the Keras Tuner, and how it can directly help you increase the performance of your next machine learning model. 
 	
 	
 	
