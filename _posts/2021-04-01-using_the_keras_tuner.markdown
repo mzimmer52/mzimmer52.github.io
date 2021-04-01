@@ -14,13 +14,15 @@ When starting any machine learning project, it is essential to try and understan
 
 When the Keras Tuner is used, you can essentially put in as many hyperparameter options as you think necessary, and the algortithm will run through all possible combinations until it finished/the best model has been found. For example, we can take a look at the following code:
 
-`def build_model(hp):
- model = Sequential()
- for i in range(hp.Int("first layer", min_value = 0, max_value = 3)):
+ `for i in range(hp.Int("first layer", min_value = 0, max_value = 3)):
  model.add(layers.Dense(hp.Choice(f"layer {i} features", [32, 64, 128, 256, 512]), activation='relu'))`
 		
 		
-	We are giving the keras option to either 0 or 3 of the above lines of code. Each line of code is going to be adding a Dense Layer to our neural network, with possible "node" values of 32, 64, 128, 256, or 512. What is unique about this method is that if there are other layers already below this line of code, the algorithm might actually decide that the model is better off without any of these layers, with a best value of 0 for i. 
+We are giving the keras option to either 0 or 3 of the above lines of code. Each line of code is going to be adding a Dense Layer to our neural network, with possible "node" values of 32, 64, 128, 256, or 512. What is unique about this method is that if there are other layers already below this line of code, the algorithm might actually decide that the model is better off without any of these layers, with a best value of 0 for i.  It should also be note that as well a changing the number of nodes in each feature, we can also provide different options for the activation function or the learning rate. 
+
+![](https://cdn.corporatefinanceinstitute.com/assets/combination.jpeg)
+
+As with any algorithm that runs an exhaustive search through every possible combination of hyperparameters, it is extremely important that you are aware of the time it may take to execute. What I would strongly advise anyone looking to utilize the Keras Tuner in their next machine learning project to do would be to run the tuner in a Google Collab notebook. Not only can you utilize Googles powerful gpu, but it can also take a lot of stress off of your local machine. Not to mention, you can models in Google Collab overnight, and even days for a time if you purchase Google Collab Pro. 
 	
 	
 	
